@@ -1,0 +1,6 @@
+framework module VENCore {
+  umbrella header "VENCore-umbrella.h"
+
+  export *
+  module * { export * }
+}

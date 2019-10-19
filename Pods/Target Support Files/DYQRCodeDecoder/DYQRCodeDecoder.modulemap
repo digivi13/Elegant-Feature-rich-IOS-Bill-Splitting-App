@@ -1,0 +1,6 @@
+framework module DYQRCodeDecoder {
+  umbrella header "DYQRCodeDecoder-umbrella.h"
+
+  export *
+  module * { export * }
+}

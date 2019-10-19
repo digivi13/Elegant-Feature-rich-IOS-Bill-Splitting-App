@@ -1,0 +1,6 @@
+framework module Venmo_iOS_SDK {
+  umbrella header "Venmo-iOS-SDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		492386421640113700D178F6 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4923863F1640113700D178F6 /* NSData+Base64.m */; };
+		492386431640113700D178F6 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 492386411640113700D178F6 /* NSString+Base64.m */; };
+		49B675B2148604A700F853E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B675B1148604A700F853E4 /* UIKit.framework */; };
+		49B675B4148604A700F853E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B675B3148604A700F853E4 /* Foundation.framework */; };
+		49B675B6148604A700F853E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B675B5148604A700F853E4 /* CoreGraphics.framework */; };
+		49B675FA148660FE00F853E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B675EB148660EC00F853E4 /* AppDelegate.m */; };
+		49B675FB148660FE00F853E4 /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B675ED148660EF00F853E4 /* Client.m */; };
+		49B675FC148660FE00F853E4 /* HTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B675EF148660F200F853E4 /* HTTPOperation.m */; };
+		49B675FD148660FE00F853E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B675F0148660F300F853E4 /* main.m */; };
+		49B675FE148660FE00F853E4 /* ProcessingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B675F3148660F600F853E4 /* ProcessingOperation.m */; };
+		49B675FF148660FE00F853E4 /* ProcessingParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B675F5148660F800F853E4 /* ProcessingParams.m */; };
+		49B67600148660FE00F853E4 /* RecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B675F7148660FC00F853E4 /* RecognitionViewController.m */; };
+		49B67601148660FE00F853E4 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B675F9148660FD00F853E4 /* Task.m */; };
+		49B676071486614300F853E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49B676031486614300F853E4 /* InfoPlist.strings */; };
+		4C7A4E131CFD9F1600DBC012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C7A4E121CFD9F1600DBC012 /* Assets.xcassets */; };
+		4C7A4E151CFDA11500DBC012 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7A4E141CFDA11500DBC012 /* LaunchScreen.storyboard */; };
+		A306095F4AFF22CB0575B62E /* Pods_OcrSdkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9441B30B6FE01874C84E6F89 /* Pods_OcrSdkDemo.framework */; };
+		BA3A119B22F65D410003FD84 /* PopupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3A119A22F65D410003FD84 /* PopupCell.xib */; };
+		BA3A119D22F661610003FD84 /* PopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3A119C22F661610003FD84 /* PopupView.m */; };
+		BA3A11A022F6623A0003FD84 /* PopupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3A119F22F6623A0003FD84 /* PopupCell.m */; };
+		BA3A11A322F672F50003FD84 /* PopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3A11A222F672F50003FD84 /* PopupController.m */; };
+		BA3A11AA22F765830003FD84 /* samplecopy.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3A11A922F765830003FD84 /* samplecopy.png */; };
+		BA3A11AC22F7677E0003FD84 /* samplecopy1.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3A11AB22F7677E0003FD84 /* samplecopy1.png */; };
+		BA3EBAE122B85D330096F259 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA3EBAE322B85D330096F259 /* MainStoryboard.storyboard */; };
+		BA4FF94922BFD6EB004ADBE4 /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA4FF94822BFD6EB004ADBE4 /* MyCustomCell.xib */; };
+		BA4FF94C22BFF6DA004ADBE4 /* MyCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4FF94B22BFF6DA004ADBE4 /* MyCustomCell.m */; };
+		BA4FF95422C90A47004ADBE4 /* MVMLoggedInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4FF94E22C90A47004ADBE4 /* MVMLoggedInViewController.m */; };
+		BA4FF95522C90A47004ADBE4 /* MVMPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4FF95022C90A47004ADBE4 /* MVMPaymentViewController.m */; };
+		BA4FF95622C90A47004ADBE4 /* MVMLoggedOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4FF95222C90A47004ADBE4 /* MVMLoggedOutViewController.m */; };
+		BA4FF95B22C91D13004ADBE4 /* MVMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4FF95A22C91D13004ADBE4 /* MVMAppDelegate.m */; };
+		BA6AB8722336BB5F00AA2848 /* ExpandedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA6AB8712336BB5F00AA2848 /* ExpandedCell.xib */; };
+		BA76C3EB22D2CEA300F482CC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA76C3EA22D2CEA300F482CC /* StoreKit.framework */; };
+		BA76C3ED22D2CECA00F482CC /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA76C3EC22D2CECA00F482CC /* Stripe.framework */; };
+		BA76C3FF22D3934C00F482CC /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = BA76C3FC22D3934C00F482CC /* Constants.m */; };
+		BA76C40022D3934C00F482CC /* BrowseExamplesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA76C3FD22D3934C00F482CC /* BrowseExamplesViewController.m */; };
+		BA76C40122D3934C00F482CC /* CardAutomaticConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA76C3FE22D3934C00F482CC /* CardAutomaticConfirmationViewController.m */; };
+		BA76C40522D3B40700F482CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA76C40422D3B40700F482CC /* ViewController.m */; };
+		BA76C40B22D3C00700F482CC /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = BA76C40922D3C00600F482CC /* ViewController1.m */; };
+		BA76C40E22D3C02A00F482CC /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA76C40C22D3C02A00F482CC /* PaymentViewController.m */; };
+		BA76C41322D5AE8900F482CC /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA76C41222D5AE8900F482CC /* sample.jpg */; };
+		BA9F535A22CD6C1C004DD6DD /* ConfirmPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9F535922CD6C1C004DD6DD /* ConfirmPayment.m */; };
+		BA9F536C22CEFE67004DD6DD /* CheckoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA9F536B22CEFE67004DD6DD /* CheckoutCell.xib */; };
+		BA9F536F22CF01C2004DD6DD /* CheckoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9F536E22CF01C2004DD6DD /* CheckoutCell.m */; };
+		BA9F537222CF095C004DD6DD /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9F537122CF095C004DD6DD /* CheckoutViewController.m */; };
+		BAD398E3233A617400ED3E6A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD398E2233A617400ED3E6A /* MessageUI.framework */; };
+		E52F4996148666A000DB5C75 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E52F4995148666A000DB5C75 /* ImageViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		BA4FF94D22C46F65004ADBE4 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = sourcecode.swift;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# $(SWIFT_EXEC)\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		21D119556E07D527712BA63D /* Pods-OcrSdkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OcrSdkDemo.release.xcconfig"; path = "Target Support Files/Pods-OcrSdkDemo/Pods-OcrSdkDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4923863E1640113700D178F6 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		4923863F1640113700D178F6 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		492386401640113700D178F6 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		492386411640113700D178F6 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		49B675AD148604A700F853E4 /* OcrSdkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OcrSdkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49B675B1148604A700F853E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		49B675B3148604A700F853E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		49B675B5148604A700F853E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		49B675EA148660EB00F853E4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Sources/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		49B675EB148660EC00F853E4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Sources/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		49B675EC148660EE00F853E4 /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Client.h; path = Sources/Client.h; sourceTree = SOURCE_ROOT; };
+		49B675ED148660EF00F853E4 /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Client.m; path = Sources/Client.m; sourceTree = SOURCE_ROOT; };
+		49B675EE148660F000F853E4 /* HTTPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPOperation.h; path = Sources/HTTPOperation.h; sourceTree = SOURCE_ROOT; };
+		49B675EF148660F200F853E4 /* HTTPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPOperation.m; path = Sources/HTTPOperation.m; sourceTree = SOURCE_ROOT; };
+		49B675F0148660F300F853E4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Sources/main.m; sourceTree = SOURCE_ROOT; };
+		49B675F1148660F500F853E4 /* OcrSdkDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OcrSdkDemo-Prefix.pch"; path = "Sources/OcrSdkDemo-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		49B675F2148660F600F853E4 /* ProcessingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProcessingOperation.h; path = Sources/ProcessingOperation.h; sourceTree = SOURCE_ROOT; };
+		49B675F3148660F600F853E4 /* ProcessingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProcessingOperation.m; path = Sources/ProcessingOperation.m; sourceTree = SOURCE_ROOT; };
+		49B675F4148660F700F853E4 /* ProcessingParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProcessingParams.h; path = Sources/ProcessingParams.h; sourceTree = SOURCE_ROOT; };
+		49B675F5148660F800F853E4 /* ProcessingParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProcessingParams.m; path = Sources/ProcessingParams.m; sourceTree = SOURCE_ROOT; };
+		49B675F6148660FB00F853E4 /* RecognitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecognitionViewController.h; path = Sources/RecognitionViewController.h; sourceTree = SOURCE_ROOT; };
+		49B675F7148660FC00F853E4 /* RecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecognitionViewController.m; path = Sources/RecognitionViewController.m; sourceTree = SOURCE_ROOT; };
+		49B675F8148660FC00F853E4 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Task.h; path = Sources/Task.h; sourceTree = SOURCE_ROOT; };
+		49B675F9148660FD00F853E4 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Task.m; path = Sources/Task.m; sourceTree = SOURCE_ROOT; };
+		49B676021486614300F853E4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = SOURCE_ROOT; };
+		49B676031486614300F853E4 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		4C7A4E121CFD9F1600DBC012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C7A4E141CFDA11500DBC012 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Resources/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		9441B30B6FE01874C84E6F89 /* Pods_OcrSdkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OcrSdkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3A119A22F65D410003FD84 /* PopupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupCell.xib; sourceTree = "<group>"; };
+		BA3A119C22F661610003FD84 /* PopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopupView.m; sourceTree = "<group>"; };
+		BA3A119E22F661810003FD84 /* PopupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopupView.h; sourceTree = "<group>"; };
+		BA3A119F22F6623A0003FD84 /* PopupCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopupCell.m; sourceTree = "<group>"; };
+		BA3A11A122F6624E0003FD84 /* PopupCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopupCell.h; sourceTree = "<group>"; };
+		BA3A11A222F672F50003FD84 /* PopupController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopupController.m; sourceTree = "<group>"; };
+		BA3A11A422F6730B0003FD84 /* PopupController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopupController.h; sourceTree = "<group>"; };
+		BA3A11A922F765830003FD84 /* samplecopy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = samplecopy.png; sourceTree = "<group>"; };
+		BA3A11AB22F7677E0003FD84 /* samplecopy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = samplecopy1.png; sourceTree = "<group>"; };
+		BA4FF94822BFD6EB004ADBE4 /* MyCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
+		BA4FF94A22BFF6BE004ADBE4 /* MyCustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCustomCell.h; sourceTree = "<group>"; };
+		BA4FF94B22BFF6DA004ADBE4 /* MyCustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCustomCell.m; sourceTree = "<group>"; };
+		BA4FF94E22C90A47004ADBE4 /* MVMLoggedInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MVMLoggedInViewController.m; path = "../../../../Downloads/venmo-ios-sdk-master/venmo-ios-sdk-master/sample/MiniVenmo/MVMLoggedInViewController.m"; sourceTree = "<group>"; };
+		BA4FF94F22C90A47004ADBE4 /* MVMLoggedInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MVMLoggedInViewController.h; path = "../../../../Downloads/venmo-ios-sdk-master/venmo-ios-sdk-master/sample/MiniVenmo/MVMLoggedInViewController.h"; sourceTree = "<group>"; };
+		BA4FF95022C90A47004ADBE4 /* MVMPaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MVMPaymentViewController.m; path = "../../../../Downloads/venmo-ios-sdk-master/venmo-ios-sdk-master/sample/MiniVenmo/MVMPaymentViewController.m"; sourceTree = "<group>"; };
+		BA4FF95122C90A47004ADBE4 /* MVMLoggedOutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MVMLoggedOutViewController.h; path = "../../../../Downloads/venmo-ios-sdk-master/venmo-ios-sdk-master/sample/MiniVenmo/MVMLoggedOutViewController.h"; sourceTree = "<group>"; };
+		BA4FF95222C90A47004ADBE4 /* MVMLoggedOutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MVMLoggedOutViewController.m; path = "../../../../Downloads/venmo-ios-sdk-master/venmo-ios-sdk-master/sample/MiniVenmo/MVMLoggedOutViewController.m"; sourceTree = "<group>"; };
+		BA4FF95322C90A47004ADBE4 /* MVMPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MVMPaymentViewController.h; path = "../../../../Downloads/venmo-ios-sdk-master/venmo-ios-sdk-master/sample/MiniVenmo/MVMPaymentViewController.h"; sourceTree = "<group>"; };
+		BA4FF95722C90BFE004ADBE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		BA4FF95822C919EA004ADBE4 /* MiniVenmo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MiniVenmo-Prefix.pch"; path = "../../../../Downloads/venmo-ios-sdk-master/venmo-ios-sdk-master/sample/MiniVenmo/MiniVenmo-Prefix.pch"; sourceTree = "<group>"; };
+		BA4FF95922C91D13004ADBE4 /* MVMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MVMAppDelegate.h; path = "../../../../Downloads/venmo-ios-sdk-master/venmo-ios-sdk-master/sample/MiniVenmo/MVMAppDelegate.h"; sourceTree = "<group>"; };
+		BA4FF95A22C91D13004ADBE4 /* MVMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MVMAppDelegate.m; path = "../../../../Downloads/venmo-ios-sdk-master/venmo-ios-sdk-master/sample/MiniVenmo/MVMAppDelegate.m"; sourceTree = "<group>"; };
+		BA61F6E823366457000E710C /* MB_imagecapture_BlinkCard_iOS_2019-10-21.mblic */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MB_imagecapture_BlinkCard_iOS_2019-10-21.mblic"; sourceTree = "<group>"; };
+		BA6AB8712336BB5F00AA2848 /* ExpandedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandedCell.xib; sourceTree = "<group>"; };
+		BA76C3EA22D2CEA300F482CC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		BA76C3EC22D2CECA00F482CC /* Stripe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Stripe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA76C3FB22D3934C00F482CC /* BrowseExamplesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrowseExamplesViewController.h; path = "../../../../Downloads/stripe-ios-master-/stripe-ios-master/Example/Custom Integration/BrowseExamplesViewController.h"; sourceTree = "<group>"; };
+		BA76C3FC22D3934C00F482CC /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = "../../../../Downloads/stripe-ios-master-/stripe-ios-master/Example/Custom Integration/Constants.m"; sourceTree = "<group>"; };
+		BA76C3FD22D3934C00F482CC /* BrowseExamplesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrowseExamplesViewController.m; path = "../../../../Downloads/stripe-ios-master-/stripe-ios-master/Example/Custom Integration/BrowseExamplesViewController.m"; sourceTree = "<group>"; };
+		BA76C3FE22D3934C00F482CC /* CardAutomaticConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardAutomaticConfirmationViewController.m; path = "../../../../Downloads/stripe-ios-master-/stripe-ios-master/Example/Custom Integration/CardAutomaticConfirmationViewController.m"; sourceTree = "<group>"; };
+		BA76C40222D3936400F482CC /* CardAutomaticConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardAutomaticConfirmationViewController.h; path = "../../../../Downloads/stripe-ios-master-/stripe-ios-master/Example/Custom Integration/CardAutomaticConfirmationViewController.h"; sourceTree = "<group>"; };
+		BA76C40322D3938400F482CC /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = "../../../../Downloads/stripe-ios-master-/stripe-ios-master/Example/Custom Integration/Constants.h"; sourceTree = "<group>"; };
+		BA76C40422D3B40700F482CC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../../../Downloads/ViewController.m; sourceTree = "<group>"; };
+		BA76C40922D3C00600F482CC /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController1.m; path = "../../../../Downloads/stripe-integration-ios-payments-through-card-master/stripe-integration-ios-payments-through-card-master/StripeIntegrationIniOS/Views/ViewController/ViewController1.m"; sourceTree = "<group>"; };
+		BA76C40A22D3C00700F482CC /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController1.h; path = "../../../../Downloads/stripe-integration-ios-payments-through-card-master/stripe-integration-ios-payments-through-card-master/StripeIntegrationIniOS/Views/ViewController/ViewController1.h"; sourceTree = "<group>"; };
+		BA76C40C22D3C02A00F482CC /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaymentViewController.m; path = "../../../../Downloads/stripe-integration-ios-payments-through-card-master/stripe-integration-ios-payments-through-card-master/StripeIntegrationIniOS/ThirdParty/PaymentViewController.m"; sourceTree = "<group>"; };
+		BA76C40D22D3C02A00F482CC /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaymentViewController.h; path = "../../../../Downloads/stripe-integration-ios-payments-through-card-master/stripe-integration-ios-payments-through-card-master/StripeIntegrationIniOS/ThirdParty/PaymentViewController.h"; sourceTree = "<group>"; };
+		BA76C40F22D3C08F00F482CC /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = "../../../../Downloads/stripe-integration-ios-payments-through-card-master/stripe-integration-ios-payments-through-card-master/StripeIntegrationIniOS/Utility/Constant.h"; sourceTree = "<group>"; };
+		BA76C41222D5AE8900F482CC /* sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sample.jpg; path = /Users/thelabratory/Documents/sample.jpg; sourceTree = "<absolute>"; };
+		BA9F535922CD6C1C004DD6DD /* ConfirmPayment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfirmPayment.m; sourceTree = "<group>"; };
+		BA9F535B22CD6CE9004DD6DD /* ConfirmPayment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfirmPayment.h; sourceTree = "<group>"; };
+		BA9F536B22CEFE67004DD6DD /* CheckoutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckoutCell.xib; sourceTree = "<group>"; };
+		BA9F536D22CF019C004DD6DD /* CheckoutCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckoutCell.h; sourceTree = "<group>"; };
+		BA9F536E22CF01C2004DD6DD /* CheckoutCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckoutCell.m; sourceTree = "<group>"; };
+		BA9F537022CF093C004DD6DD /* CheckoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
+		BA9F537122CF095C004DD6DD /* CheckoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
+		BAD398E2233A617400ED3E6A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		BAFDC46422F5F5D20083B685 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../../../Desktop/ios/OcrSdkDemo/OcrSdkDemo/ViewController.h; sourceTree = "<group>"; };
+		DD1888E533D396156D0A8619 /* Pods-OcrSdkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OcrSdkDemo.debug.xcconfig"; path = "Target Support Files/Pods-OcrSdkDemo/Pods-OcrSdkDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E52F4994148666A000DB5C75 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewController.h; path = Sources/ImageViewController.h; sourceTree = SOURCE_ROOT; };
+		E52F4995148666A000DB5C75 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewController.m; path = Sources/ImageViewController.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49B675AA148604A700F853E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD398E3233A617400ED3E6A /* MessageUI.framework in Frameworks */,
+				BA76C3ED22D2CECA00F482CC /* Stripe.framework in Frameworks */,
+				BA76C3EB22D2CEA300F482CC /* StoreKit.framework in Frameworks */,
+				49B675B2148604A700F853E4 /* UIKit.framework in Frameworks */,
+				49B675B4148604A700F853E4 /* Foundation.framework in Frameworks */,
+				49B675B6148604A700F853E4 /* CoreGraphics.framework in Frameworks */,
+				A306095F4AFF22CB0575B62E /* Pods_OcrSdkDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4923863D1640113700D178F6 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				4923863E1640113700D178F6 /* NSData+Base64.h */,
+				4923863F1640113700D178F6 /* NSData+Base64.m */,
+				492386401640113700D178F6 /* NSString+Base64.h */,
+				492386411640113700D178F6 /* NSString+Base64.m */,
+			);
+			name = Base64;
+			path = Sources/Base64;
+			sourceTree = SOURCE_ROOT;
+		};
+		49B675A2148604A600F853E4 = {
+			isa = PBXGroup;
+			children = (
+				49B675B7148604A700F853E4 /* OcrSdkDemo */,
+				49B675B0148604A700F853E4 /* Frameworks */,
+				49B675AE148604A700F853E4 /* Products */,
+				9F457E2A64221B60997A053E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		49B675AE148604A700F853E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49B675AD148604A700F853E4 /* OcrSdkDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49B675B0148604A700F853E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAD398E2233A617400ED3E6A /* MessageUI.framework */,
+				BA76C3EC22D2CECA00F482CC /* Stripe.framework */,
+				BA76C3EA22D2CEA300F482CC /* StoreKit.framework */,
+				49B675B1148604A700F853E4 /* UIKit.framework */,
+				49B675B3148604A700F853E4 /* Foundation.framework */,
+				49B675B5148604A700F853E4 /* CoreGraphics.framework */,
+				9441B30B6FE01874C84E6F89 /* Pods_OcrSdkDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49B675B7148604A700F853E4 /* OcrSdkDemo */ = {
+			isa = PBXGroup;
+			children = (
+				49B675E914864A9D00F853E4 /* Sources */,
+				49B675E8148647DD00F853E4 /* Resources */,
+			);
+			path = OcrSdkDemo;
+			sourceTree = "<group>";
+		};
+		49B675E8148647DD00F853E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C7A4E121CFD9F1600DBC012 /* Assets.xcassets */,
+				49B676021486614300F853E4 /* Info.plist */,
+				BA4FF95822C919EA004ADBE4 /* MiniVenmo-Prefix.pch */,
+				49B676031486614300F853E4 /* InfoPlist.strings */,
+				BA3EBAE322B85D330096F259 /* MainStoryboard.storyboard */,
+				4C7A4E141CFDA11500DBC012 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		49B675E914864A9D00F853E4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4923863D1640113700D178F6 /* Base64 */,
+				49B675EA148660EB00F853E4 /* AppDelegate.h */,
+				49B675EB148660EC00F853E4 /* AppDelegate.m */,
+				49B675EC148660EE00F853E4 /* Client.h */,
+				49B675ED148660EF00F853E4 /* Client.m */,
+				49B675EE148660F000F853E4 /* HTTPOperation.h */,
+				49B675EF148660F200F853E4 /* HTTPOperation.m */,
+				49B675F2148660F600F853E4 /* ProcessingOperation.h */,
+				49B675F3148660F600F853E4 /* ProcessingOperation.m */,
+				49B675F4148660F700F853E4 /* ProcessingParams.h */,
+				49B675F5148660F800F853E4 /* ProcessingParams.m */,
+				49B675F6148660FB00F853E4 /* RecognitionViewController.h */,
+				49B675F7148660FC00F853E4 /* RecognitionViewController.m */,
+				BA76C3FB22D3934C00F482CC /* BrowseExamplesViewController.h */,
+				BA76C3FD22D3934C00F482CC /* BrowseExamplesViewController.m */,
+				BA76C40222D3936400F482CC /* CardAutomaticConfirmationViewController.h */,
+				BA76C3FE22D3934C00F482CC /* CardAutomaticConfirmationViewController.m */,
+				BA76C40322D3938400F482CC /* Constants.h */,
+				BA76C3FC22D3934C00F482CC /* Constants.m */,
+				BA9F535B22CD6CE9004DD6DD /* ConfirmPayment.h */,
+				BA9F535922CD6C1C004DD6DD /* ConfirmPayment.m */,
+				BA76C40D22D3C02A00F482CC /* PaymentViewController.h */,
+				BA76C40C22D3C02A00F482CC /* PaymentViewController.m */,
+				BA76C40A22D3C00700F482CC /* ViewController1.h */,
+				BA76C40922D3C00600F482CC /* ViewController1.m */,
+				BA76C40F22D3C08F00F482CC /* Constant.h */,
+				BA4FF94A22BFF6BE004ADBE4 /* MyCustomCell.h */,
+				BA4FF94B22BFF6DA004ADBE4 /* MyCustomCell.m */,
+				BA4FF94822BFD6EB004ADBE4 /* MyCustomCell.xib */,
+				BA9F536D22CF019C004DD6DD /* CheckoutCell.h */,
+				BA9F536E22CF01C2004DD6DD /* CheckoutCell.m */,
+				BA9F536B22CEFE67004DD6DD /* CheckoutCell.xib */,
+				BA6AB8712336BB5F00AA2848 /* ExpandedCell.xib */,
+				BA61F6E823366457000E710C /* MB_imagecapture_BlinkCard_iOS_2019-10-21.mblic */,
+				BA3A119A22F65D410003FD84 /* PopupCell.xib */,
+				BA3A11A122F6624E0003FD84 /* PopupCell.h */,
+				BA3A119F22F6623A0003FD84 /* PopupCell.m */,
+				BA3A119E22F661810003FD84 /* PopupView.h */,
+				BA3A119C22F661610003FD84 /* PopupView.m */,
+				BA3A11A422F6730B0003FD84 /* PopupController.h */,
+				BA3A11A222F672F50003FD84 /* PopupController.m */,
+				BAFDC46422F5F5D20083B685 /* ViewController.h */,
+				BA76C40422D3B40700F482CC /* ViewController.m */,
+				49B675F8148660FC00F853E4 /* Task.h */,
+				49B675F9148660FD00F853E4 /* Task.m */,
+				49B675F0148660F300F853E4 /* main.m */,
+				49B675F1148660F500F853E4 /* OcrSdkDemo-Prefix.pch */,
+				BA76C41222D5AE8900F482CC /* sample.jpg */,
+				E52F4994148666A000DB5C75 /* ImageViewController.h */,
+				E52F4995148666A000DB5C75 /* ImageViewController.m */,
+				BA9F537022CF093C004DD6DD /* CheckoutViewController.h */,
+				BA9F537122CF095C004DD6DD /* CheckoutViewController.m */,
+				BA4FF94F22C90A47004ADBE4 /* MVMLoggedInViewController.h */,
+				BA4FF94E22C90A47004ADBE4 /* MVMLoggedInViewController.m */,
+				BA4FF95122C90A47004ADBE4 /* MVMLoggedOutViewController.h */,
+				BA4FF95222C90A47004ADBE4 /* MVMLoggedOutViewController.m */,
+				BA4FF95322C90A47004ADBE4 /* MVMPaymentViewController.h */,
+				BA4FF95022C90A47004ADBE4 /* MVMPaymentViewController.m */,
+				BA3A11AB22F7677E0003FD84 /* samplecopy1.png */,
+				BA3A11A922F765830003FD84 /* samplecopy.png */,
+				BA4FF95922C91D13004ADBE4 /* MVMAppDelegate.h */,
+				BA4FF95A22C91D13004ADBE4 /* MVMAppDelegate.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		9F457E2A64221B60997A053E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD1888E533D396156D0A8619 /* Pods-OcrSdkDemo.debug.xcconfig */,
+				21D119556E07D527712BA63D /* Pods-OcrSdkDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49B675AC148604A700F853E4 /* OcrSdkDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49B675CB148604A700F853E4 /* Build configuration list for PBXNativeTarget "OcrSdkDemo" */;
+			buildPhases = (
+				5F630F552BF77F38502596D6 /* [CP] Check Pods Manifest.lock */,
+				49B675A9148604A700F853E4 /* Sources */,
+				49B675AA148604A700F853E4 /* Frameworks */,
+				49B675AB148604A700F853E4 /* Resources */,
+				80145B98AA27B6BC48C5DADE /* [CP] Embed Pods Frameworks */,
+				24D0BBD5E42BFB8E67ED1EC1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+				BA4FF94D22C46F65004ADBE4 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = OcrSdkDemo;
+			productName = OcrSdkDemo;
+			productReference = 49B675AD148604A700F853E4 /* OcrSdkDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49B675A4148604A600F853E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = ABBYY;
+				TargetAttributes = {
+					49B675AC148604A700F853E4 = {
+						DevelopmentTeam = ZXSEZ2R84J;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 49B675A7148604A600F853E4 /* Build configuration list for PBXProject "OcrSdkDemo" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49B675A2148604A600F853E4;
+			productRefGroup = 49B675AE148604A700F853E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49B675AC148604A700F853E4 /* OcrSdkDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49B675AB148604A700F853E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA3A119B22F65D410003FD84 /* PopupCell.xib in Resources */,
+				BA4FF94922BFD6EB004ADBE4 /* MyCustomCell.xib in Resources */,
+				BA3A11AC22F7677E0003FD84 /* samplecopy1.png in Resources */,
+				49B676071486614300F853E4 /* InfoPlist.strings in Resources */,
+				4C7A4E131CFD9F1600DBC012 /* Assets.xcassets in Resources */,
+				BA3EBAE122B85D330096F259 /* MainStoryboard.storyboard in Resources */,
+				BA76C41322D5AE8900F482CC /* sample.jpg in Resources */,
+				BA6AB8722336BB5F00AA2848 /* ExpandedCell.xib in Resources */,
+				4C7A4E151CFDA11500DBC012 /* LaunchScreen.storyboard in Resources */,
+				BA3A11AA22F765830003FD84 /* samplecopy.png in Resources */,
+				BA9F536C22CEFE67004DD6DD /* CheckoutCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24D0BBD5E42BFB8E67ED1EC1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OcrSdkDemo/Pods-OcrSdkDemo-resources.sh",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/melania_82_aug.zzip",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/nn_model_LogoDetection_mikica_26.zzip",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/windfall-intermediate.der",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/BRLiveScanViewController.nib",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/BRStaticScanViewController.nib",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/btnPlus.png",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/btnPlus@2x.png",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/btnPlus@3x.png",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/btn_cam.png",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/btn_cam@2x.png",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/btn_cam@3x.png",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/btn_cam_pressed.png",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/btn_cam_pressed@2x.png",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/btn_cam_pressed@3x.png",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/ic_flash_off.png",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/ic_flash_off@2x.png",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/ic_flash_off@3x.png",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/ic_flash_on.png",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/ic_flash_on@2x.png",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/ic_flash_on@3x.png",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/camera.wav",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/merchant-names.csv",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework/singapore-mall.csv",
+				"${PODS_ROOT}/MBBlinkCard/Microblink.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/melania_82_aug.zzip",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/nn_model_LogoDetection_mikica_26.zzip",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/windfall-intermediate.der",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BRLiveScanViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BRStaticScanViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btnPlus.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btnPlus@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btnPlus@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_cam.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_cam@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_cam@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_cam_pressed.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_cam_pressed@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_cam_pressed@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_flash_off.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_flash_off@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_flash_off@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_flash_on.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_flash_on@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_flash_on@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/camera.wav",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/merchant-names.csv",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/singapore-mall.csv",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Microblink.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OcrSdkDemo/Pods-OcrSdkDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F630F552BF77F38502596D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OcrSdkDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80145B98AA27B6BC48C5DADE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OcrSdkDemo/Pods-OcrSdkDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${PODS_ROOT}/BlinkReceipt/BlinkReceipt.framework",
+				"${BUILT_PRODUCTS_DIR}/CHCSVParser/CHCSVParser.framework",
+				"${BUILT_PRODUCTS_DIR}/CMDQueryStringSerialization/CMDQueryStringSerialization.framework",
+				"${BUILT_PRODUCTS_DIR}/CZPicker/CZPicker.framework",
+				"${BUILT_PRODUCTS_DIR}/DYQRCodeDecoder/DYQRCodeDecoder.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
+				"${BUILT_PRODUCTS_DIR}/ISO8601/ISO8601.framework",
+				"${PODS_ROOT}/MBBlinkCard/Microblink.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/SSKeychain/SSKeychain.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SimpleKeychain/SimpleKeychain.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+				"${BUILT_PRODUCTS_DIR}/UIAlertView+Blocks/UIAlertView_Blocks.framework",
+				"${BUILT_PRODUCTS_DIR}/VENCore/VENCore.framework",
+				"${BUILT_PRODUCTS_DIR}/Venmo-iOS-SDK/Venmo_iOS_SDK.framework",
+				"${BUILT_PRODUCTS_DIR}/libextobjc/libextobjc.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlinkReceipt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHCSVParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CMDQueryStringSerialization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CZPicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DYQRCodeDecoder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISO8601.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Microblink.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSKeychain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleKeychain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIAlertView_Blocks.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VENCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Venmo_iOS_SDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libextobjc.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OcrSdkDemo/Pods-OcrSdkDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49B675A9148604A700F853E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA4FF95622C90A47004ADBE4 /* MVMLoggedOutViewController.m in Sources */,
+				49B675FA148660FE00F853E4 /* AppDelegate.m in Sources */,
+				49B675FB148660FE00F853E4 /* Client.m in Sources */,
+				49B675FC148660FE00F853E4 /* HTTPOperation.m in Sources */,
+				49B675FD148660FE00F853E4 /* main.m in Sources */,
+				BA76C3FF22D3934C00F482CC /* Constants.m in Sources */,
+				BA3A11A022F6623A0003FD84 /* PopupCell.m in Sources */,
+				BA4FF95422C90A47004ADBE4 /* MVMLoggedInViewController.m in Sources */,
+				BA9F536F22CF01C2004DD6DD /* CheckoutCell.m in Sources */,
+				BA76C40122D3934C00F482CC /* CardAutomaticConfirmationViewController.m in Sources */,
+				49B675FE148660FE00F853E4 /* ProcessingOperation.m in Sources */,
+				49B675FF148660FE00F853E4 /* ProcessingParams.m in Sources */,
+				BA4FF94C22BFF6DA004ADBE4 /* MyCustomCell.m in Sources */,
+				49B67600148660FE00F853E4 /* RecognitionViewController.m in Sources */,
+				BA4FF95B22C91D13004ADBE4 /* MVMAppDelegate.m in Sources */,
+				BA9F535A22CD6C1C004DD6DD /* ConfirmPayment.m in Sources */,
+				BA76C40022D3934C00F482CC /* BrowseExamplesViewController.m in Sources */,
+				49B67601148660FE00F853E4 /* Task.m in Sources */,
+				BA76C40522D3B40700F482CC /* ViewController.m in Sources */,
+				BA3A119D22F661610003FD84 /* PopupView.m in Sources */,
+				BA3A11A322F672F50003FD84 /* PopupController.m in Sources */,
+				BA76C40E22D3C02A00F482CC /* PaymentViewController.m in Sources */,
+				BA76C40B22D3C00700F482CC /* ViewController1.m in Sources */,
+				BA4FF95522C90A47004ADBE4 /* MVMPaymentViewController.m in Sources */,
+				BA9F537222CF095C004DD6DD /* CheckoutViewController.m in Sources */,
+				E52F4996148666A000DB5C75 /* ImageViewController.m in Sources */,
+				492386421640113700D178F6 /* NSData+Base64.m in Sources */,
+				492386431640113700D178F6 /* NSString+Base64.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BA3EBAE322B85D330096F259 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA4FF95722C90BFE004ADBE4 /* Base */,
+			);
+			name = MainStoryboard.storyboard;
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49B675C9148604A700F853E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		49B675CA148604A700F853E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49B675CC148604A700F853E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD1888E533D396156D0A8619 /* Pods-OcrSdkDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZXSEZ2R84J;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sources/OcrSdkDemo-Prefix.pch";
+				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = imagecapture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		49B675CD148604A700F853E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21D119556E07D527712BA63D /* Pods-OcrSdkDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZXSEZ2R84J;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sources/OcrSdkDemo-Prefix.pch";
+				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = imagecapture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49B675A7148604A600F853E4 /* Build configuration list for PBXProject "OcrSdkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49B675C9148604A700F853E4 /* Debug */,
+				49B675CA148604A700F853E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49B675CB148604A700F853E4 /* Build configuration list for PBXNativeTarget "OcrSdkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49B675CC148604A700F853E4 /* Debug */,
+				49B675CD148604A700F853E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49B675A4148604A600F853E4 /* Project object */;
+}
